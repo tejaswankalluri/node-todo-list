@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:wght@400;600&display=swap");
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 3rem 3rem;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #E3E9FF;
+}
+
+.title-center {
+  text-align: center;
+  color: #AF7EEB;
+  font-size: 3rem;
+}
+
+.todo {
+  margin: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo .container {
+  width: 30rem;
+  min-height: 30rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 7rem;
+}
+
+.todo .container .list {
+  margin: 1rem;
+}
+
+.todo .container .list .list-items {
+  font-size: 1.5rem;
+}
+
+.todo .container .list .list-items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.todo .container .list .list-items li .todo-text {
+  margin: 1rem;
+  width: 20rem;
+  font-family: 'Itim', cursive;
+  font-size: 2rem;
+}
+
+.todo .container .list .list-items li .delete-task .fa-trash {
+  color: red;
+  cursor: pointer;
+}
+
+.todo .container .list .list-items li .delete-task a {
+  margin: auto;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.todo .container .list .list-items li .hr {
+  border: 1px solid red;
+}
+
+.todo .container #add-todo {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid #AF7EEB;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  outline: none;
+  font-size: 2rem;
+}
+
+.todo .container #add-todo:focus {
+  width: 85%;
+}
+
+.todo .container .add-button {
+  position: absolute;
+  bottom: -1.7rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #AF7EEB;
+  padding: 1rem 3rem;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

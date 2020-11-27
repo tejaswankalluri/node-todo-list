@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.svg" type="image/x-icon">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="title-center">Todo list</h1>
+    <div class="todo">
+        <div class="container">
+            <div class="list">
+                <ul class="list-items">
+                    
+                    {{#each task}}
+                    <li>
+                        <div class="todo-text">{{this.name}}</div>
+                        <div class="delete-task">
+                            <a href="todo/{{this.id}}">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <hr class="hr">
+                    {{/each }}
+                </ul>
+            </div>
+            <form action="/" method="post">
+                <input type="text" name="task" id="add-todo" placeholder="Type to Add ..." required>
+                <button class="add-button">add <i class="fa fa-plus" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

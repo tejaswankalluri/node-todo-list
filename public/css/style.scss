@@ -1,0 +1,90 @@
+@import "_variables";
+@import "_colors";
+
+body {
+    background-color: $background;
+}
+.title-center {
+    text-align: center;
+    color: $mainColor;
+    font-size: 3rem;
+}
+.todo {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 30rem;
+        min-height: 30rem;
+        max-height: max-content;
+        background-color: #fff;
+        box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+        border-radius: 1rem;
+        position: relative;
+        padding: 1rem;
+        padding-bottom: 7rem;
+        .list{
+            margin: 1rem;
+            .list-items{
+                font-size: 1.5rem;
+                li{
+                    display: flex;
+                    position: relative;
+                    .todo-text{
+                        margin: 1rem;
+                        width: 20rem;
+                        font-family: 'Itim', cursive;
+                        font-size: 2rem;
+                    }
+                    .delete-task{
+                        .fa-trash {
+                            color: red;
+                            cursor: pointer;
+                        }
+                        a{
+                            margin: auto;
+                            position: absolute;
+                            right: 2rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .hr {
+                        border: 1px solid red;
+                    }
+                }
+            }
+        }
+        #add-todo {
+            position: absolute;
+            bottom: 5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid $mainColor;
+            transition: width 0.4s ease-in-out;
+            outline: none;
+            font-size: 2rem;
+            
+        }
+        #add-todo:focus{
+            width: 85%;
+        }
+        .add-button {
+            position: absolute;
+            bottom: -1.7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $mainColor;
+            padding: 1rem 3rem;
+            color: #fff;
+            text-transform: capitalize;
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}
