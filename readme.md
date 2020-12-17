@@ -6,9 +6,10 @@ In this web app you can add todos and it is realtime
  - Install node in your pc [node download](https://nodejs.org/)
  - Type 👇 in terminal
  
+    `cd node-todo-list`
+    
     `npm install`
-
-    `cd node-todo-list` 
+    
  - Add .env file as shown in the .env_sample file 
  - Configure Mongodb and add the link in .env file
  - Type 👇 in terminal
